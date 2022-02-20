@@ -1,4 +1,4 @@
-from .. import Mam, Mam2, Mam3, Mam4, Mam5 , Mam6, Mam7, Mam8, Mam9, Mam10, Mam11, Mam12, Mm13, Mam14, Mam15, Mam16, Mam17, Mam18, Mam19, Mam20, SUDO_USERS
+from MAMBA import Mam, Mam2, Mam3, Mam4, Mam5 , Mam6, Mam7, Mam8, Mam9, Mam10, Mam11, Mam12, Mm13, Mam14, Mam15, Mam16, Mam17, Mam18, Mam19, Mam20, SUDO_USERS
 from telethon import events
 from time import time
 from datetime import datetime
