@@ -8,7 +8,7 @@ import telethon.utils
 from telethon.tl import functions
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
-from decouple import config
+from decouple import Config
 from os import getenv
 import logging
 import time
