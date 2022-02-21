@@ -8,7 +8,7 @@ import telethon.utils
 from telethon.tl import functions
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
-from MAMBA import Config
+from MAMBA.Config import Var
 from os import getenv
 import logging
 import time
