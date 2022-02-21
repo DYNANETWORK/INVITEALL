@@ -23,7 +23,7 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 
 
 #values
-API_ID = Config("API_ID", default=None)
+API_ID = Config("API_ID")
 API_HASH = Config("API_HASH", default=None)
 ALIVE_PIC = Config("ALIVE_PIC", default=None)
 HEROKU_APP_NAME = Config("HEROKU_APP_NAME", None)
