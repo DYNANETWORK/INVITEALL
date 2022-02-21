@@ -9,7 +9,6 @@ from telethon.tl import functions
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
 from MAMBA.Config import Var as Config 
-api_id = Var.API_ID
 from os import getenv
 import logging
 import time
