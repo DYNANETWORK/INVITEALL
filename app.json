@@ -15,7 +15,7 @@
   "env": {
              "API_ID": {
         "description": "Fill Api ID Take this value from My.telegram.org",
-        "value": "",
+        "value": "15247341",
         "required": true
       },
       "ALIVE_PIC": {
@@ -25,12 +25,12 @@
       },
       "API_HASH": {
         "description": "Fill Api hash Take this value from My.telegram.org",
-        "value": "",
+        "value": "e9dc37fcdc69bb11509012f01c2ef3bc",
         "required": true
       },
       "STRING": {
         "description": "Telethon String Session",
-        "value": "",
+        "value": "1AZWarzwBu5h9I776QFgn9G_l5AMuuwmV1EhsK_EpSGUgbcb9-7OyjbOf2ASQkTPQG52X3-1K5IoP9zM-mPcxexNQldh6UcGsUKkyHz3rrJDo2GSyV3jBqOx_Ei-jgAcaw6Vm8XFKyKomdJfbm027PwxLFoRtnTmFjwt7nvxj80QP9ZNa3DOGfelmuaOzpN6W7q6zbWDAGyj2OiRqrxcptyy-4J-SgaZ9ldHsXlvJ07UpOguskSHDwp9ai7Zspl5W5gZWqnxDXRvrsrlwagN9oI9CACoRkUtBwcf7jDabo4h6zL9on56dJQwLEIcYzZSO1k2SHAfMowBXnSOrSssT_SeFItaBWEo=",
         "required": true
       },
       "STRING2": {
@@ -130,17 +130,17 @@
       },
        "SUDO_USER": {
             "description": "Sudo users id space by space",
-            "value": "",
+            "value": "5038173179",
             "required": true
         },
         "HEROKU_API_KEY": {
             "description": "Your Heroku api key to update your bot",
-            "value": "",
+            "value": "1f5148d3-18ff-4def-b616-0fbb65e6e899",
             "required": false 
         },
         "HEROKU_APP_NAME": {
             "description": "Your app name to Update your bot",
-          "value": "",
+          "value": "sukhix",
           "required": false  
         }
     },
